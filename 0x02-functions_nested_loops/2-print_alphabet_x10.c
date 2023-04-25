@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point
- * Decription: 'points _putchar to stdout'
+ * function: print_alphabet_x10
  * Return: always 0
  */
 void print_alphabet_x10(void)
