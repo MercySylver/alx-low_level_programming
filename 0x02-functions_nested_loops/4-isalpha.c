@@ -1,9 +1,8 @@
 i#include "main.h"
 /**
- * _isalpha(:) - Shows 1 if the input is a
- * letter Another cases, shows 0
+ * _isalpha - checks for alphabetic character.
  *
- * @c: The character in ASCII code.
+ * @c: is a letter, lowercase or uppercase
  *
  * Return: 1 for letter. 0 for the rest
  */
