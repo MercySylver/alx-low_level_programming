@@ -1,33 +1,37 @@
 #include "main.h"
 /**
- * main - Entry point
- * Decription: 'points _putchar to stdout'
+ * times_table - Print the timestable.
  * Return: always 0
  */
 void times_table(void)
 {
-	int number, mult, prod;
+	int x, y, z, u, d;
 
-	for (number = 0; number <= 9; number++)
+	for (x = 0; x <= 9; x++)
 	{
-		_putchar('0');
-
-		for (mult = 1; mult <= 9; mult++)
+		for (y = 0; y <= 9; y++)
 		{
-			_putchar(',');
-			_putchar(' ');
-
-			prod number * mult;
-
-			if (prod <= 9)
+			z = x * y;
+			if (z > 9)
 			{
-				_putchar(' ');
+				u = z % 10;
+				d = (z - u) / 10;
+				_putchar(44);
+				_putchar(32);
+				_putchar(d + '0');
+				_putchar(u + '0');
 			}
 			else
 			{
-				_putchar((prod / 10) + '0');
+				if (y != 0)
+				{
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+				_putchar(z + '0');
 			}
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
