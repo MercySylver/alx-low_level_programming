@@ -1,18 +1,20 @@
 #include "main.h"
 /**
- * main - Entry point
- * Decription: 'points _putchar to stdout'
+ * _abs - computes the absolute value of an integer
+ * @c: Return an integer value.
  * Return: always 0
  */
-int _abs(int)
+int _abs(int c)
 {
-	if (i >= 0)
+	if (c < 0)
 	{
-		return (1);
+		int abs_value;
+
+		abs_value = c * -1;
+		return (abs_value);
 	}
 	else
 	{
-		return (i * -1);
+		return (c);
 	}
-	_putchar('\n');
 }
