@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - Entry point
- * Decription: 'points _putchar to stdout'
+ * _islower -' Print 1 if the input is a'.
+ * @c: The charcater in ASCII code.
  * Return: always 0
  */
 int _islower(int c)
