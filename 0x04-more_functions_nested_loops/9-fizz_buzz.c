@@ -10,25 +10,25 @@ int main(void)
 
 	for (counter = 1; counter <= 100; counter++)
 	{
-		if ((counter % 3 == 0) && (counter % 5 == 0))
+		if ((counter % 3 == 0) && (counter % 5 != 0))
 		{
-			printf("FuzzBuzz");
+			printf(" Fuzz");
 		}
-		else if (counter % 3 == 0)
+		else if (counter % 5 == 0 && counter % 3 != 0)
 		{
-			printf("Fuzz");
+			printf(" Buzz");
 		}
-		else if (counter % 5 == 0)
+		else if (counter % 3 == 0 && counter % 5 == 0)
 		{
-			printf("Buzz");
+			printf(" FuzzBuzz");
+		}
+		else if (counter == 1)
+		{
+			printf("%d", counter);
 		}
 		else
 		{
 			printf("%d", counter);
-		}
-		if (counter != 100)
-		{
-			printf(" ");
 		}
 	}
 	printf("\n");
