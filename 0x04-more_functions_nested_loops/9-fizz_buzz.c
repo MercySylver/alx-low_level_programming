@@ -10,9 +10,9 @@ int main(void)
 
 	for (counter = 1; counter <= 100; counter++)
 	{
-		if ((counter % 3 == 0) && (counter % 5 != 0))
+		if (counter % 3 == 0 && counter % 5 != 0)
 		{
-			printf(" Fuzz");
+			printf(" Fizz");
 		}
 		else if (counter % 5 == 0 && counter % 3 != 0)
 		{
@@ -20,7 +20,7 @@ int main(void)
 		}
 		else if (counter % 3 == 0 && counter % 5 == 0)
 		{
-			printf(" FuzzBuzz");
+			printf(" FizzBuzz");
 		}
 		else if (counter == 1)
 		{
