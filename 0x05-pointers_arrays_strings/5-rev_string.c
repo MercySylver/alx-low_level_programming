@@ -6,20 +6,19 @@
  */
 void print_rev(char *s)
 {
-	char rev = s[0];
-	int counter = 0;
-	int i;
+	int len, counter, i;
+	char temp;
 
-	while (s[counter] != '\0')
+	for (len = 0; s[len] != '\0'; len++)
 	{
-		counter++;
+		counter = 0;
+		i = len / 2;
 	}
-
-	for (i = 0; i <= counter; i++)
+	while (i--)
 	{
-		counter--;
-		rev = s[i];
-		s[i] = s[counter];
-		s[counter] = rev;
+		temp = s[len - countter - 1];
+		s[len - counter - 1] = s[counter];
+		s[counter] = temp;
+		counter++
 	}
 }
