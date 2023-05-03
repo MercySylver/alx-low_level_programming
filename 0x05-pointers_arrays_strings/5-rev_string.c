@@ -1,24 +1,24 @@
 #include "main.h"
 /**
  * print_rev - prints a string, in reverse.
- * @s: the inpued argument
+ * @s: the inputed argument
  * Return: prints a string, in reverse
  */
 void print_rev(char *s)
 {
-	int len, counter, i;
-	char temp;
+	int i;
+	int counter;
+	char rev = s[0];
 
-	for (len = 0; s[len] != '\0'; len++)
+	while (s[counter] != '\0')
 	{
-		counter = 0;
-		i = len / 2;
+		counter++;
 	}
-	while (i--)
+	for (i = 0; i < counter; i++)
 	{
-		temp = s[len - countter - 1];
-		s[len - counter - 1] = s[counter];
-		s[counter] = temp;
-		counter++
+		counter--;
+		rev = s[i];
+		s[i] = s[counter];
+		s[counter] = rev;
 	}
 }
