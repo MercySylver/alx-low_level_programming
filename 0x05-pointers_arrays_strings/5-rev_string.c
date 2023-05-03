@@ -6,18 +6,16 @@
  */
 void print_rev(char *s)
 {
-	int i = 0;
-	int c = 0;
-	char temp;
+	int len = 0, index = 0;
+	char tmp;
 
-	while (s[c++])
+	while (s[index++])
+	len++;
+
+	for (index = len - 1; index >= len / 2; index--)
 	{
-		i++;
-	}
-	for (c = i - 1; c >= i / 2; c--)
-	{
-		temp = s[c];
-		s[c] = s[i - c - 1];
-		s[i - c - 1] = temp;
+		tmp = s[index];
+		s[index] = s[len - index - 1];
+		s[len - index - 1] = tmp;
 	}
 }
