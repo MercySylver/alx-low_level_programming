@@ -4,10 +4,11 @@
   * @s: the inputed argument.
   * @b: the inputed argument
   * @n: the inputed argument
+Return: Always 0 (Success)
   */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned in i;
+	unsigned int i;
 
 	for(i = 0; i < n; i++)
 	{
